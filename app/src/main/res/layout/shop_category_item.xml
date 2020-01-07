@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/category_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/routeListColour"/>
+
+        <CheckBox
+            android:id="@+id/category_shopSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:minWidth="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/menu_text_colour"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

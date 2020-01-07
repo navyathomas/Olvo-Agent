@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:id="@+id/relt_top_Panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="20dp">
+
+
+        <ImageView
+
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_backward_icon" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relt_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relt_top_Panel"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center_vertical">
+
+
+        <TextView
+
+            android:id="@+id/tv_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/menu_route"
+            android:textColor="@color/profile_text_colour"
+            android:textSize="16dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_add_route"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_button_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Route_addRoute"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/route_recyclr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relt_route"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

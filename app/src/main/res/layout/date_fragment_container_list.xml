@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_date"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/menu_text_colour"/>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_date_to"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/login_edittext_background"
+            android:orientation="horizontal"
+            android:textSize="13dp">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txt_date_to"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_date_from"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/img_arrow"
+            android:background="@drawable/login_edittext_background"
+            android:textAlignment="gravity"
+            android:layout_marginLeft="20dp"
+            android:textSize="13dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

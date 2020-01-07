@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=FC:2D:3B:22:70:17:F0:01:75:B2:5A:62:00:3F:2F:E5:D5:4E:B4:B3%3Bcom.example.root.olvoagent.ui.ShopListPage
+
+    You can also add your credentials to an existing key, using this line:
+    FC:2D:3B:22:70:17:F0:01:75:B2:5A:62:00:3F:2F:E5:D5:4E:B4:B3;com.example.root.olvoagent.ui.ShopListPage
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        YOUR_KEY_HERE
+    </string>
+</resources>

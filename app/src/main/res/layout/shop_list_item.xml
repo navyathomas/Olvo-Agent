@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shop_list_bacground">
+
+
+        <LinearLayout
+            android:id="@+id/linr_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shop_list_bacground"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:autoSizeTextType="uniform"
+                        android:textSize="15dp" />
+
+                    <TextView
+
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/profile_phoneRegister_textColour" />
+
+                    <TextView
+
+                        android:id="@+id/shop_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/profile_phoneRegister_textColour" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linr_credit_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shop_list_bacground"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_text_credits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="credits"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/credit_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_text_credits"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/shop_list_creditColour"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/Inr1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/credit_balance"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/shop_list_creditColour"
+                        android:textSize="15dp" />
+
+
+                    //wallet text//
+
+                    <TextView
+
+                        android:id="@+id/tv_txt_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Inr1"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="wallet"
+                        android:textColor="@color/profile_page_textColour"
+                        android:textSize="12dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/wallet_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_txt_wallet"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/shop_list_creditColour"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/Inr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/wallet_balance"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/shop_list_creditColour"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/shop_arrow_hide"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_arrow" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/relt_shopData_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/linr_details"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+
+            <TextView
+
+                android:id="@+id/tv_selct_route_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/profile_page_Email"
+                android:textColor="@color/profile_phoneRegister_textColour"
+                android:textSize="15dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_selct_route_email_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/profile_page_textColour" />
+
+
+            <TextView
+
+                android:id="@+id/tv_selct_route_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_email_set"
+                android:layout_marginLeft="10dp"
+                android:text="@string/profile_page_Country"
+                android:textColor="@color/profile_phoneRegister_textColour"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_selct_route_country_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_country"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/profile_page_textColour" />
+
+
+            <TextView
+
+                android:id="@+id/tv_selct_route_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_country_set"
+                android:layout_marginLeft="10dp"
+                android:text="@string/profile_page_Region"
+                android:textColor="@color/profile_phoneRegister_textColour"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_selct_route_region_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_region"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/profile_page_textColour" />
+
+
+            <TextView
+
+                android:id="@+id/tv_selct_route_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_region_set"
+                android:layout_marginLeft="10dp"
+                android:text="@string/adShop_route"
+                android:textColor="@color/profile_phoneRegister_textColour"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_selct_route_route_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_selct_route_route"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/profile_page_textColour" />
+
+
+            <Button
+                android:id="@+id/btn_selct_recharge"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_selct_route_route_set"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_button_background"
+                android:text="@string/shop_page_select_route_recharge"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <Button
+
+                android:id="@+id/btn_shopList_map"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_selct_route_route_set"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_button_background"
+                android:text="@string/shop_page_select_route_map"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

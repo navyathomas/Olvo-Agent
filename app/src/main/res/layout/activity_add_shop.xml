@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolour"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linr_back_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/backgroundcolour"
+        android:minHeight="20dp">
+
+        <ImageView
+            android:id="@+id/img_qick_rechrge_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_backward_icon" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relt_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linr_back_arrow"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_quick_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/adshop_register"
+            android:textColor="@color/profile_page_textColour"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button_background"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adShop_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rel_button"
+        android:layout_below="@id/relt_shop"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_shop"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/edt_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/profile_page_Name"
+                    android:inputType="text"
+                    android:textColor="@color/profile_page_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_shop"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_shopEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/profile_page_Email"
+                    android:inputType="text"
+                    android:textColor="@color/profile_page_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_shop"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/edt_shop_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/add_shop_country_code"
+                    android:inputType="number"
+                    android:textColor="@color/profile_page_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_shop"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/edt_country_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/profile_phoneRegister_text"
+                    android:inputType="text"
+                    android:textColor="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_shop"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/tv_enable_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/profile_page_Region"
+                    android:inputType="number"
+                    android:textColor="@color/profile_phoneRegister_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+
+                <ImageView
+
+                    android:id="@+id/img_region_dropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_drop_rate" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_shop"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/relt_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/adShop_route"
+                    android:inputType="number"
+                    android:text="@string/adShop_route"
+                    android:textColor="@color/profile_phoneRegister_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                    android:id="@+id/img_route_selector"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_drop_rate" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_route"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/relt_threshold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/addShop_threshold"
+                    android:inputType="number"
+                    android:textColor="@color/profile_phoneRegister_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/relt_threshold"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile_edittext_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_shop_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/addShop_shop_Type"
+                    android:inputType="number"
+                    android:text="@string/addShop_shop_Type"
+                    android:textColor="@color/profile_phoneRegister_textColour"
+                    android:textColorHint="@color/profile_phoneRegister_textColour"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+
+                    android:id="@+id/img_shop_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_drop_rate" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/relt_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+
+                    <CheckBox
+                        android:id="@+id/chck_voip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="@string/enable_voip"
+                        android:textColor="@color/profile_page_textColour"
+                        android:textSize="17dp">
+
+                    </CheckBox>
+
+                    <!--<CheckBox-->
+
+                    <!--android:id="@+id/chck_mobile"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/chck_voip"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="@string/enable_voip"-->
+                    <!--android:textColor="@color/profile_page_textColour"-->
+                    <!--android:textSize="17dp">-->
+
+                    <!--</CheckBox>-->
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

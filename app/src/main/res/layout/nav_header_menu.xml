@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/ic_olvo_menu" />
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/menu_page_logout_background"
+            android:text="@string/menu_logout"
+            android:textAlignment="gravity"
+            android:textColor="@color/menu_logout_colour"
+            android:textSize="19dp"
+
+            />
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_logout"
+            android:layout_below="@id/img_header"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:id="@+id/rel_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relt_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_home" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_home"
+                        android:text="@string/menu_home"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relt_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_home"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+
+                        android:id="@+id/img_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_profile" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_profile"
+                        android:text="@string/menu_profile"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relt_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_profile"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_rewardwallet" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_reward"
+                        android:text="@string/menu_shop_summary"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/payment_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_profile"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_rewardwallet" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_payment"
+                        android:text="@string/payment_request"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/innvoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_profile"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_rewardwallet" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_invoice"
+                        android:text="@string/inVoice"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relt_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_history"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_profitreport" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_profit"
+                        android:text="@string/menu_profileReport"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relt_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_profit"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+
+                        android:id="@+id/img_recharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_rechargehistory" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_recharge"
+                        android:text="@string/menu_route"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relt_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+
+                        android:id="@+id/img_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_settings" />
+
+                    <TextView
+
+                        android:id="@+id/tv_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_settings"
+                        android:text="@string/menu_settings"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="19dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relt_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relt_settings"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+
+                        android:id="@+id/img_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_menu_support" />
+
+                    <TextView
+                        android:id="@+id/tv_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_support"
+                        android:text="@string/menu_support"
+                        android:textColor="@color/menu_text_colour"
+                        android:textSize="19dp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

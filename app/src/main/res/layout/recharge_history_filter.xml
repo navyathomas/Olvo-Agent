@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linr_back_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:minHeight="20dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/img_qick_rechrge_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_backward_icon" />
+        </LinearLayout>
+
+
+
+        /** for shop Filter and Date Filter..**
+        <!--<LinearLayout-->
+            <!--android:id="@+id/rel_selector"-->
+            <!--android:layout_width="320dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_below="@id/linr_back_arrow"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/background_selector_filter_shop_date"-->
+            <!--android:weightSum="2"-->
+            <!--&gt;-->
+
+            <!--<RelativeLayout-->
+
+                <!--android:id="@+id/rel_shop_fragment"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/background_selector_filter_shop_date"-->
+                <!--android:gravity="center"-->
+
+                <!--&gt;-->
+
+                <!--<TextView-->
+
+                    <!--android:id="@+id/tv_shop"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:text="@string/menu_profile"-->
+                    <!--android:textColor="@color/profile_phoneRegister_textColour"-->
+                    <!--android:textSize="16dp"-->
+
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+
+                <!--android:id="@+id/rel_date_fragment"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/background_selector_filter_shop_date"-->
+                <!--android:gravity="center">-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/filter_date"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@color/profile_phoneRegister_textColour"-->
+                    <!--android:textSize="16dp" />-->
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rel_button_ok"
+            android:layout_below="@id/linr_back_arrow"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_button_ok"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/select_route_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ok"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

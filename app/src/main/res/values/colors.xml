@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FD5373</color>
+    <color name="colorPrimaryDark">#FD5373</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#edffffff</color>
+    <color name="backgroundcolour">#FCFCFC</color>
+    <color name="menu_text_colour">#95989A</color>
+    <color name="menu_logout_colour">#F7F7F7</color>
+    <color name="login_edittext">#d22a5f</color>
+    <color name="login_text_colour">#dc3d45</color>
+    <color name="profile_text_colour">#FD5373</color>
+    <color name="shop_list_creditColour">#10ac2a</color>
+    <color name="lightGreen">#00aabb</color>
+
+    <color name="profile_phoneRegister_textColour">#D4D4D4</color>
+    <color name="editText_background">#FFFFFF</color>
+
+    <color name="profile_page_textColour">#95989A</color>
+    <color name="profile_info_editText_Colour">#333E48</color>
+    <color name="routeListColour">#5b5959</color>
+</resources>

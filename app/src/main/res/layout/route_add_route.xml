@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/rel_create_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_back_route"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_backward_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_back_route"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/create_Route"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel_create_route"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+
+            android:id="@+id/textView_routeName"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_route_add_edit"
+            android:gravity="center_vertical"
+            android:hint="@string/profile_page_Name"
+            android:maxLines="1"
+            android:textColorHint="@color/profile_phoneRegister_textColour"
+            android:paddingLeft="20dp"
+            />
+
+        <EditText
+
+            android:id="@+id/textView_desciption"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textView_routeName"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_route_add_edit"
+            android:gravity="center_vertical"
+            android:hint="@string/description"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textColorHint="@color/profile_phoneRegister_textColour"
+            android:paddingLeft="20dp"/>
+
+
+        <Button
+
+            android:id="@+id/btn_route_ok"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/login_button_background"
+            android:text="@string/adShop_button"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

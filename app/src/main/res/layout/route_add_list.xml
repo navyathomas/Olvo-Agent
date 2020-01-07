@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edittext_background">
+
+
+        <RelativeLayout
+
+            android:id="@+id/relt_route_list"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/tv_routeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/profile_info_editText_Colour"
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:id="@+id/img_arrow_hide_picker"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_arrow" />
+
+
+            <ImageView
+                android:id="@+id/img_delte_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@id/img_arrow_hide_picker"
+                android:src="@drawable/ic_delete_icon" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/rel_route_descrtn"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relt_route_list"
+
+            >
+
+
+            <TextView
+
+                android:id="@+id/tv_route_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/profile_info_editText_Colour"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
